@@ -1,3 +1,3 @@
-output "cloudfront_url" {
-  value = module.cloudFront.cloudfront_url
-}
+# output "cloudfront_url" {
+#   value = module.cloudFront.cloudfront_url
+# }
