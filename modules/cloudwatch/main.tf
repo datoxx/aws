@@ -2,7 +2,6 @@
 resource "aws_cloudwatch_metric_alarm" "terminate_alarm" {
   alarm_name          = "terraform-terminate"
   actions_enabled     = true
-  # alarm_actions       = [aws_lambda_function.terraform_lambda.arn]
   alarm_actions       =  [var.lambda_arn]
   namespace           = "AWS/Usage"
   metric_name         = "CallCount"
