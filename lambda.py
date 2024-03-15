@@ -10,7 +10,7 @@ def lambda_handler(event, context):
           # Get a list of available Elastic IPs
         response = ec2_client.describe_addresses()
     
-        # Find the first available Elastic IP (you can modify this logic as needed)
+        # Find the first available Elastic IP 
         elastic_ip = None
         for address in response['Addresses']:
             if 'InstanceId' not in address:
